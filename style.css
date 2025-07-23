@@ -42,6 +42,15 @@
     color: #E95A08;
 }
 
+.main-btn {
+    background-color: #E95A08;
+    color: white;
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-weight: 600;
+}
+
 /* Header Style */
 
 /* Nav Style */
@@ -82,6 +91,7 @@
     align-items: center;
     border: 1px solid red;
     padding-top: 106px;
+    margin-bottom: 120px;
 }
 
 .banner-left h3 {
@@ -97,6 +107,53 @@
 .banner-right img {
     display: block;
 }
+
+/* Main Style */
+/* Our Plants Style */
+.our-plants {
+    border: 1px solid red;
+    margin-bottom: 221px;
+}
+
+.top-title {
+    text-align: center;
+    font-size: 3.12rem;
+    font-weight: bold;
+}
+
+.our-plants-top p {
+    font-size: 1.37rem;
+    text-align: center;
+    width: 888px;
+    margin: 0 auto;
+    margin-top: 16px;
+
+}
+
+.our-plants-bottom {
+    margin-top: 49px;
+    display: grid;
+    grid-template-columns: repeat(4, calc((100% - 60px) / 4));
+    gap: 20px;
+
+}
+
+.product {
+    border: 1px solid red;
+
+}
+
+.product-img {
+    width: 100%;
+    text-align: center;
+}
+
+.product-info {
+
+    margin: 30px auto;
+    text-align: center;
+}
+
 
 @media screen and (width <=576px) {
 
