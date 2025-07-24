@@ -64,9 +64,9 @@
 
 /* Nav Style */
 .navbar {
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 30px;
     margin-bottom: 109px;
 }
@@ -74,6 +74,10 @@
 .nav-item {
     list-style: none;
     margin-right: 48px;
+}
+
+.nav-item.nav-item:nth-child(4) {
+    margin-right: 0px;
 }
 
 .nav-link {
@@ -98,7 +102,7 @@
 /* Banner Section */
 .banner {
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-top: 106px;
     margin-bottom: 120px;
 }
@@ -120,7 +124,7 @@
 /* Main Style */
 /* Our Plants Style */
 .our-plants {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-bottom: 221px;
 }
 
@@ -148,7 +152,7 @@
 }
 
 .product {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
 }
 
@@ -165,7 +169,7 @@
 
 /* Flower-Plants Style */
 .flower-plants {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     align-items: center;
     gap: 60px;
     margin-bottom: 133px;
@@ -204,7 +208,7 @@
 
 /* Latest Deals */
 .latest-deals {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .latest-deals-top {
@@ -245,7 +249,7 @@
 .deal-1 {
     margin-bottom: 25px;
     border-radius: 14px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 206px;
     text-align: center;
     display: flex;
@@ -259,7 +263,7 @@
 
 .deal-2 {
     border-radius: 14px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 206px;
     text-align: center;
     display: flex;
@@ -272,7 +276,7 @@
 
 .deal-3 {
     border-radius: 14px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
     text-align: center;
     display: flex;
@@ -349,7 +353,7 @@
 .footer-container {
     margin-top: 50px;
     margin-bottom: 50px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .footer-container {
@@ -395,10 +399,13 @@
 @media screen and (max-width: 576px) {
 
     /* Header Style */
-    .navbar,
+    .navbar {
+        padding: 0 16px;
+    }
+
     .banner-left {
-        max-width: 361px;
-        margin: 0 auto;
+        /* max-width: 361px; */
+        margin: 0 16px;
     }
 
     .navbar {
@@ -409,6 +416,10 @@
     .nav-item:nth-child(2) .nav-link,
     .nav-item:nth-child(3) .nav-link {
         display: none;
+    }
+
+    .nav-item:nth-child(4) .nav-link {
+        margin-right: 0;
     }
 
     .logo {
@@ -438,20 +449,75 @@
         font-size: 0.87rem;
     }
 
+    /* Out Plants */
+    .our-plants {
+        margin-bottom: 41px;
+    }
+
     .our-plants-top p {
         width: 336px;
+        font-size: 0.87rem;
     }
 
     .our-plants-bottom {
         grid-template-columns: repeat(2, calc((100% - 40px) / 2));
-        /* grid-template-columns: repeat(4, 1fr); */
+        justify-content: center;
+        margin-top: 16px;
 
     }
 
+    .our-plants-bottom .product:nth-last-child(-n+2) {
+        display: none;
+    }
+
+    /* Flower Plants */
+    .flower-plants {
+        flex-direction: column;
+        margin: 0 16px;
+        gap: 18px;
+    }
+
+    .flower-plants-left img:nth-of-type(2) {
+        display: none;
+    }
+
+    .main-img {
+        max-width: 100%;
+        display: block;
+    }
+
+    .right-title {
+        font-size: 1.5rem;
+    }
+
+    .right-points li {
+        font-size: 0.87rem;
+    }
+
+    ul {
+        list-style-position: inside;
+    }
+
+
     /* Latest Deals */
+    .latest-deals {
+        margin: 0 16px;
+        margin-top: 143px;
+    }
+
+    .latest-deals-title {
+        font-size: 1.5rem;
+    }
+
+    .latest-deals-desc {
+        font-size: 0.87rem;
+        margin-bottom: 51px;
+    }
+
     .deals {
         flex-direction: column;
-        margin: 0 auto;
+        margin-bottom: 40px;
+
     }
 
     .deal-left,
@@ -471,4 +537,50 @@
         font-size: 1rem;
         font-weight: 600;
     }
+
+    /* Join */
+    .join {
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .join-title {
+        font-size: 1.25rem;
+    }
+
+    .subscribe-email {
+        width: 218px;
+        height: 50px;
+    }
+
+    .join-btn {
+        width: 103px;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        margin: 50px 20px;
+    }
+
+    .footer-left-desc {
+        margin-top: 16px;
+    }
+
+    .menu-list:nth-last-child(-n+2) {
+        margin-bottom: 24px;
+    }
+
+    .footer-center {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-right {
+        justify-content: flex-start;
+    }
+
+
+
 }
