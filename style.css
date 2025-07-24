@@ -47,6 +47,10 @@
     color: #E95A08;
 }
 
+.bg-color {
+    background-color: #f5f8ff;
+}
+
 .main-btn {
     background-color: #E95A08;
     color: white;
@@ -339,6 +343,49 @@
     width: 188px;
     font-size: 1rem;
     font-weight: 600;
+}
+
+/* Footer Desing */
+.footer-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid red;
+}
+
+.footer-container {
+    justify-content: space-between;
+    row-gap: 24px;
+}
+
+.footer-left-desc {
+    width: 359px;
+    font-size: 1.37rem;
+}
+
+.menu-list {
+    text-decoration: none;
+    color: #6B7280;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.menu-list:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.footer-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-right {
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.footer-logo {
+    width: 36px;
+    height: 36px;
 }
 
 .hide {
