@@ -189,6 +189,18 @@
     top: -150px;
     right: -100px;
     width: 300px;
+    animation: slow-rotate 30s linear infinite;
+    transform-origin: center center;
+}
+
+@keyframes slow-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .right-title {
